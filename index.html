@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Grayscale - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">How long do you have left to live?</h1>
+                        <p class="intro-text">Find out.</p>
+                        <a href="#intro2" class="btn btn-circle page-scroll make-next-visible">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header class="intro not-visible" id="intro2">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <h1>How old are you?</h1>
+                    <div class="col-md-2 col-md-offset-5">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control text-center" id="age">
+                            </div>
+                            <a href="#gender_part" class="btn page-scroll">
+                                <input type="submit" class="btn btn-default make-next-visible" value="Submit">
+                            </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header class="intro not-visible" id="gender_part">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="btn-group" data-toggle="buttons" id="gender" >
+                            <a href="#smoking" class="page-scroll">
+                                <button type="button" class="btn btn-default make-next-visible gender_button" value='F'>Female</button>
+                                <button type="button" class="btn btn-default make-next-visible gender_button" value='M'>Male</button>
+                            </a>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header class="intro not-visible" id="smoking">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <h1>How many cigarettes do you smoke per day?</h1>
+                    <div class="col-md-2 col-md-offset-5">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control text-center" id="smoke">
+                            </div>
+                            <a href="#exercise_part" class="btn page-scroll">
+                                <input type="submit" class="btn btn-default make-next-visible" value="Submit">
+                            </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header class="intro not-visible" id="exercise_part">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <h1>How many hours do you exercise per week?</h1>
+                    <div class="col-md-2 col-md-offset-5">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control text-center" id="exercise">
+                            </div>
+                            <a href="#driving_part" class="btn page-scroll">
+                                <input type="submit" class="btn btn-default make-next-visible" value="Submit">
+                            </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header class="intro not-visible" id="driving_part">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <h1>How many kilometers do you drive per week?</h1>
+                    <div class="col-md-2 col-md-offset-5">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control text-center" id="driving">
+                            </div>
+                            <a href="#results" class="btn page-scroll">
+                                <input type="submit" class="btn btn-default make-next-visible" id="calculate" value="Submit">
+                            </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header class="intro not-visible results" id="results">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 id="res"></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Footer -->
+    <footer class="footer not-visible">
+        <div class="container text-center">
+            <p >
+                <a href="http://gosset.wharton.upenn.edu/mortality/" class="footer-link">Formulas </a>
+                <a href="http://www.ssa.gov/OACT/STATS/table4c6.html" class="footer-link">Data </a>
+            </p>
+
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.csv-0.71.min.js"></script>
+
+    <script src="js/calculator.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+
+</body>
+
+</html>
